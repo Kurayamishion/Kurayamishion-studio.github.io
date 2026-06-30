@@ -485,3 +485,46 @@ transform:translateY(-500px);
 }
 
 }
+.character-image{
+
+width:250px;
+
+display:block;
+
+margin:auto;
+
+border-radius:20px;
+
+box-shadow:0 0 30px rgba(140,108,255,.5);
+
+margin-bottom:30px;
+
+}
+
+.profile{
+
+width:100%;
+
+border-collapse:collapse;
+
+margin-bottom:30px;
+
+}
+
+.profile td{
+
+padding:12px;
+
+border-bottom:1px solid rgba(255,255,255,.1);
+
+}
+
+.profile td:first-child{
+
+color:#9c84ff;
+
+width:180px;
+
+font-weight:bold;
+
+}
