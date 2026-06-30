@@ -404,3 +404,77 @@ text-align:center;
 }
 
 }
+/* ========================= */
+/* STAR BACKGROUND */
+/* ========================= */
+
+.stars,
+.stars2,
+.stars3{
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+pointer-events:none;
+
+}
+
+.stars{
+
+background-image:
+radial-gradient(white 1px, transparent 1px);
+
+background-size:60px 60px;
+
+opacity:.35;
+
+animation:moveStars 90s linear infinite;
+
+}
+
+.stars2{
+
+background-image:
+radial-gradient(#8d6cff 1px, transparent 1px);
+
+background-size:90px 90px;
+
+opacity:.25;
+
+animation:moveStars 150s linear infinite;
+
+}
+
+.stars3{
+
+background-image:
+radial-gradient(#ffffff 2px, transparent 2px);
+
+background-size:150px 150px;
+
+opacity:.15;
+
+animation:moveStars 220s linear infinite;
+
+}
+
+@keyframes moveStars{
+
+from{
+
+transform:translateY(0);
+
+}
+
+to{
+
+transform:translateY(-500px);
+
+}
+
+}
