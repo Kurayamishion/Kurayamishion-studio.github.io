@@ -261,9 +261,16 @@ transition:.35s;
 
 .card:hover{
 
-transform:translateY(-8px);
+transform:translateY(-10px);
+
+box-shadow:
+
+0 0 25px rgba(140,108,255,.4),
+
+0 0 45px rgba(140,108,255,.25);
 
 }
+
 
 .card h2{
 
