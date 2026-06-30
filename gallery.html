@@ -1,63 +1,116 @@
-/* ========================= */
-/* GALLERY */
-/* ========================= */
+<!DOCTYPE html>
+<html lang="en">
 
-.gallery-grid{
+<head>
 
-display:grid;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+<title>Gallery | Kurayami Shion</title>
 
-gap:30px;
+<link rel="stylesheet" href="style.css">
 
-padding:60px;
+</head>
 
-}
+<body>
 
-.gallery-card{
+<header class="navbar">
 
-background:rgba(255,255,255,.05);
+<div class="logo">
+Kurayami Shion
+</div>
 
-border-radius:20px;
+<nav>
 
-overflow:hidden;
+<a href="index.html">Home</a>
 
-transition:.35s;
+<a href="characters.html">Characters</a>
 
-backdrop-filter:blur(10px);
+<a href="gallery.html">Gallery</a>
 
-border:1px solid rgba(255,255,255,.08);
+<a href="download.html">Download</a>
 
-}
+<a href="about.html">About</a>
 
-.gallery-card:hover{
+</nav>
 
-transform:translateY(-10px);
+</header>
 
-box-shadow:0 0 30px rgba(140,108,255,.45);
+<section class="hero">
 
-}
+<div class="stars"></div>
+<div class="stars2"></div>
+<div class="stars3"></div>
+<div class="overlay"></div>
 
-.gallery-card img{
+<div class="hero-content">
 
-width:100%;
+<h1>GALLERY</h1>
 
-display:block;
+<p>
 
-}
+Official artwork collection of Kurayami Shion.
 
-.gallery-card h3{
+</p>
 
-padding:20px;
+</div>
 
-color:#9c84ff;
+</section>
 
-}
+<section class="gallery-grid">
 
-.gallery-card p{
+<div class="gallery-card">
 
-padding:0 20px 20px;
+<img src="assets/kurayami-shion.png" alt="Kurayami Shion">
 
-color:#cccccc;
+<h3>Main Artwork</h3>
 
-}
+<p>Official Illustration</p>
+
+</div>
+
+<div class="gallery-card">
+
+<img src="assets/coming-soon.jpg" alt="Coming Soon">
+
+<h3>Coming Soon</h3>
+
+<p>More artwork will be added.</p>
+
+</div>
+
+<div class="gallery-card">
+
+<img src="assets/coming-soon.jpg" alt="Coming Soon">
+
+<h3>Coming Soon</h3>
+
+<p>Future Illustration.</p>
+
+</div>
+
+<div class="gallery-card">
+
+<img src="assets/coming-soon.jpg" alt="Coming Soon">
+
+<h3>Coming Soon</h3>
+
+<p>Wallpaper Collection.</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Kurayami Shion Project
+
+</p>
+
+</footer>
+
+</body>
+
+</html>
