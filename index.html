@@ -1,156 +1,105 @@
+
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Kurayami Shion</title>
 
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
-
-body{
-background:#050505;
-color:white;
-overflow-x:hidden;
-  <body>
-
-<header class="navbar">
-    <div class="logo">KURAYAMI SHION</div>
-
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Characters</a>
-        <a href="#">Gallery</a>
-        <a href="#">Download</a>
-        <a href="#">About</a>
-    </nav>
-</header>
-
-<section class="hero">
-
-    <div class="hero-content">
-
-        <h1>WELCOME TO<br> KURAYAMI SHION</h1>
-
-        <p>
-            Enter a dark anime universe filled with original characters,
-            stories, music, and imagination.
-        </p>
-
-        <div class="hero-buttons">
-
-            <a href="#" class="btn">Characters</a>
-
-            <a href="#" class="btn">Download</a>
-
-            <a href="#" class="btn">Gallery</a>
-
-            <a href="#" class="btn">About</a>
-
-        </div>
-
-    </div>
-
-</section>
-
-</body>
-}
-
-header{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-flex-direction:column;
-text-align:center;
-background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.9));
-}
-
-h1{
-font-size:55px;
-}
-
-h2{
-margin-top:15px;
-color:#bbbbbb;
-}
-
-p{
-margin-top:20px;
-font-size:18px;
-width:85%;
-max-width:700px;
-line-height:1.8;
-}
-
-.button{
-margin-top:35px;
-padding:15px 35px;
-background:white;
-color:black;
-text-decoration:none;
-border-radius:40px;
-font-weight:bold;
-transition:.3s;
-}
-
-.button:hover{
-background:#999;
-}
-
-section{
-padding:80px 30px;
-}
-
-.card{
-background:#111;
-padding:30px;
-border-radius:20px;
-max-width:900px;
-margin:auto;
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<header>
+<!-- ================= NAVBAR ================= -->
 
-<h1>Kurayami Shion</h1>
+<header class="navbar">
 
-<h2>Official UTAU Character</h2>
+<div class="logo">
+Kurayami Shion
+</div>
 
-<p>
-Welcome to the official website of Kurayami Shion.
-Explore the world, story, and future development of this original UTAU character.
-</p>
+<nav>
 
-<a href="#about" class="button">
-Enter Website
-</a>
+<a href="#">Home</a>
+
+<a href="#characters">Characters</a>
+
+<a href="#gallery">Gallery</a>
+
+<a href="#download">Download</a>
+
+<a href="#about">About</a>
+
+</nav>
 
 </header>
 
-<section id="about">
+<!-- ================= HERO ================= -->
 
-<div class="card">
+<section class="hero">
 
-<h2>About</h2>
+<div class="overlay"></div>
 
-<br>
+<div class="hero-content">
+
+<h1>WELCOME TO<br>KURAYAMI SHION</h1>
 
 <p>
 
-Kurayami Shion is an original UTAU character created to become part of a larger multimedia universe.
-This website will continue to grow with new artwork, voicebanks, stories, and project updates.
+The official website of the original UTAU character.
+Discover characters, music, artwork, stories, and future projects.
+
+</p>
+
+<div class="buttons">
+
+<a href="#characters" class="button">
+Characters
+</a>
+
+<a href="#gallery" class="button">
+Gallery
+</a>
+
+<a href="#download" class="button">
+Download
+</a>
+
+<a href="#about" class="button">
+About
+</a>
+
+<a href="https://suno.com/s/DxYFkJ2RC9dlerjG"
+target="_blank"
+class="button music">
+
+🎵 Theme Song
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CHARACTERS ================= -->
+
+<section id="characters">
+
+<div class="card">
+
+<h2>Characters</h2>
+
+<p>
+
+Meet Kurayami Shion and future original characters
+that will become part of this multimedia universe.
 
 </p>
 
@@ -158,50 +107,77 @@ This website will continue to grow with new artwork, voicebanks, stories, and pr
 
 </section>
 
+<!-- ================= GALLERY ================= -->
+
+<section id="gallery">
+
+<div class="card">
+
+<h2>Gallery</h2>
+
+<p>
+
+Artwork, illustrations, wallpapers,
+and promotional images will be available here.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= DOWNLOAD ================= -->
+
+<section id="download">
+
+<div class="card">
+
+<h2>Download</h2>
+
+<p>
+
+Voicebanks, official resources,
+and project files will be published here.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+<div class="card">
+
+<h2>About</h2>
+
+<p>
+
+Kurayami Shion is an original UTAU character
+created as the center of a larger multimedia project
+including music, stories, animation,
+and future game development.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<p>
+
+© 2026 Kurayami Shion Project
+
+</p>
+
+</footer>
+
 </body>
-</html>
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <title>Kurayami Shion Studio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
 
-<body>
-
-  <header class="navbar">
-    <h1>Kurayami Shion</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Studio</a>
-      <a href="#">Karakter</a>
-      <a href="#">Kontak</a>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <h2>Selamat datang di dunia Kurayami</h2>
-    <p>Tempat ide, karakter, dan cerita lahir dari bayangan.</p>
-    <button>Masuk Studio</button>
-  </section>
-
-  <section class="content">
-    <div class="card">
-      <h3>Project</h3>
-      <p>Kumpulan karya dan dunia yang sedang dibuat.</p>
-    </div>
-
-    <div class="card">
-      <h3>Karakter</h3>
-      <p>Setiap karakter punya cerita dan suara sendiri.</p>
-    </div>
-
-    <div class="card">
-      <h3>Worldbuilding</h3>
-      <p>Semesta Kurayami berkembang perlahan.</p>
-    </div>
-  </section>
-
-</body>
 </html>
