@@ -1,1 +1,63 @@
+/* ========================= */
+/* GALLERY */
+/* ========================= */
 
+.gallery-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+padding:60px;
+
+}
+
+.gallery-card{
+
+background:rgba(255,255,255,.05);
+
+border-radius:20px;
+
+overflow:hidden;
+
+transition:.35s;
+
+backdrop-filter:blur(10px);
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+.gallery-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 0 30px rgba(140,108,255,.45);
+
+}
+
+.gallery-card img{
+
+width:100%;
+
+display:block;
+
+}
+
+.gallery-card h3{
+
+padding:20px;
+
+color:#9c84ff;
+
+}
+
+.gallery-card p{
+
+padding:0 20px 20px;
+
+color:#cccccc;
+
+}
