@@ -1,116 +1,32 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: radial-gradient(circle at top, #1a1a2e, #0b0b10);
-  color: #e0e0e0;
-}
-
-/* NAVBAR */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background: rgba(0,0,0,0.4);
-  backdrop-filter: blur(10px);
-}
-
-.navbar h1 {
-  margin: 0;
-  font-size: 20px;
-}
-
-.navbar a {
-  color: #e0e0e0;
-  text-decoration: none;
-  margin-left: 15px;
-}
-
-/* HERO */
-.hero {
-  text-align: center;
-  padding: 80px 20px;
-}
-
-.hero h2 {
-  font-size: 32px;
-}
-
-.hero button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  border: none;
-  background: #6c5ce7;
-  color: white;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-/* CONTENT */
-.content {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  padding: 40px;
-  flex-wrap: wrap;
-}
-
-.card {
-  width: 200px;
-  padding: 20px;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 12px;
-  backdrop-filter: blur(8px);
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-@keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-8px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-.card {
-  animation: float 4s ease-in-out infinite;
-}body {
-  animation: fadeIn 1s ease;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}html {
-  scroll-behavior: smooth;
-}
 /* ========================= */
-/* LANDING PAGE */
+/* KURAYAMI SHION STYLE */
 /* ========================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
 
 body{
-
-background:#090909;
-color:white;
-font-family:Arial,sans-serif;
-
+background:#08080d;
+color:#ffffff;
+overflow-x:hidden;
 }
 
+/* ========================= */
 /* NAVBAR */
+/* ========================= */
 
 .navbar{
+
+position:fixed;
+top:0;
+left:0;
+
+width:100%;
 
 display:flex;
 justify-content:space-between;
@@ -120,15 +36,11 @@ padding:20px 60px;
 
 background:rgba(0,0,0,.45);
 
-backdrop-filter:blur(10px);
-
-position:fixed;
-
-width:100%;
-
-top:0;
+backdrop-filter:blur(15px);
 
 z-index:999;
+
+border-bottom:1px solid rgba(255,255,255,.08);
 
 }
 
@@ -140,7 +52,16 @@ font-weight:bold;
 
 letter-spacing:3px;
 
-color:#8c6cff;
+color:#8d6cff;
+
+text-shadow:0 0 10px #8d6cff;
+
+}
+
+nav{
+
+display:flex;
+gap:25px;
 
 }
 
@@ -150,19 +71,21 @@ text-decoration:none;
 
 color:white;
 
-margin-left:30px;
-
 transition:.3s;
+
+font-weight:bold;
 
 }
 
 nav a:hover{
 
-color:#8c6cff;
+color:#8d6cff;
 
 }
 
+/* ========================= */
 /* HERO */
+/* ========================= */
 
 .hero{
 
@@ -176,37 +99,65 @@ align-items:center;
 
 text-align:center;
 
+position:relative;
+
 padding:30px;
 
 background:
-linear-gradient(rgba(0,0,0,.6),
-rgba(0,0,0,.8));
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.85));
 
-animation:fadeIn 1.2s;
+}
+
+.overlay{
+
+position:absolute;
+
+width:100%;
+height:100%;
+
+background:radial-gradient(circle,#2a1b60 0%,transparent 70%);
+
+opacity:.35;
+
+animation:pulse 8s infinite;
+
 }
 
 .hero-content{
 
+position:relative;
+
+z-index:2;
+
 max-width:850px;
 
-padding:50px;
+padding:45px;
 
-background:rgba(0,0,0,.30);
+background:rgba(255,255,255,.05);
 
-backdrop-filter:blur(12px);
+backdrop-filter:blur(15px);
 
 border-radius:20px;
 
-border:1px solid rgba(255,255,255,.15);
+border:1px solid rgba(255,255,255,.1);
+
+animation:fadeUp 1.2s;
 
 }
 
 .hero h1{
-  
+
+font-size:65px;
+
+letter-spacing:3px;
+
+margin-bottom:25px;
+
 text-shadow:
-0 0 10px #8c6cff,
-0 0 20px #8c6cff,
-0 0 40px #6b4eff;
+
+0 0 15px #8d6cff,
+
+0 0 35px #5b3fd9;
 
 }
 
@@ -214,15 +165,19 @@ text-shadow:
 
 font-size:20px;
 
-line-height:35px;
+line-height:1.8;
 
-color:#d6d6d6;
+margin-bottom:35px;
 
-margin-bottom:40px;
+color:#dddddd;
 
 }
 
-.hero-buttons{
+/* ========================= */
+/* BUTTON */
+/* ========================= */
+
+.buttons{
 
 display:flex;
 
@@ -234,37 +189,121 @@ flex-wrap:wrap;
 
 }
 
-.btn{
+.button{
 
-text-decoration:none;
-
-padding:15px 35px;
-
-background:#6b4eff;
-
-color:white;
+padding:15px 32px;
 
 border-radius:40px;
 
-font-weight:bold;
+text-decoration:none;
+
+color:white;
+
+background:#6c4dff;
 
 transition:.35s;
 
-box-shadow:0 0 20px rgba(107,78,255,.4);
+font-weight:bold;
+
+box-shadow:0 0 15px rgba(108,77,255,.4);
 
 }
 
-.btn:hover{
+.button:hover{
 
 transform:translateY(-6px);
 
-box-shadow:0 0 30px rgba(107,78,255,.9);
+background:#8368ff;
+
+box-shadow:
+
+0 0 20px #8d6cff,
+
+0 0 40px #8d6cff;
 
 }
 
-/* ANIMASI */
+.music{
 
-@keyframes fadeIn{
+background:#ff4f8a;
+
+}
+
+/* ========================= */
+/* CARD */
+/* ========================= */
+
+section{
+
+padding:90px 25px;
+
+}
+
+.card{
+
+max-width:900px;
+
+margin:auto;
+
+padding:35px;
+
+background:rgba(255,255,255,.05);
+
+border-radius:18px;
+
+backdrop-filter:blur(12px);
+
+border:1px solid rgba(255,255,255,.08);
+
+transition:.35s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.card h2{
+
+margin-bottom:20px;
+
+font-size:32px;
+
+color:#9c84ff;
+
+}
+
+.card p{
+
+line-height:1.9;
+
+color:#d6d6d6;
+
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+footer{
+
+padding:35px;
+
+text-align:center;
+
+background:#050505;
+
+color:#888;
+
+}
+
+/* ========================= */
+/* ANIMATION */
+/* ========================= */
+
+@keyframes fadeUp{
 
 from{
 
@@ -279,6 +318,88 @@ to{
 opacity:1;
 
 transform:translateY(0);
+
+}
+
+}
+
+@keyframes pulse{
+
+0%{
+
+transform:scale(1);
+
+opacity:.25;
+
+}
+
+50%{
+
+transform:scale(1.15);
+
+opacity:.45;
+
+}
+
+100%{
+
+transform:scale(1);
+
+opacity:.25;
+
+}
+
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media(max-width:768px){
+
+.navbar{
+
+padding:15px 20px;
+
+flex-direction:column;
+
+}
+
+nav{
+
+margin-top:15px;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.buttons{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.button{
+
+width:230px;
+
+text-align:center;
 
 }
 
