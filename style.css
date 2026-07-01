@@ -665,3 +665,184 @@ font-size:26px;
 font-weight:bold;
 
 }
+/* ========================= */
+/* FEATURED */
+/* ========================= */
+
+.featured{
+
+padding:80px 10%;
+
+}
+
+.featured h2{
+
+text-align:center;
+
+margin-bottom:40px;
+
+color:#b88cff;
+
+}
+
+.featured-card{
+
+display:flex;
+
+flex-wrap:wrap;
+
+align-items:center;
+
+gap:40px;
+
+background:#111;
+
+padding:30px;
+
+border-radius:20px;
+
+}
+
+.featured-card img{
+
+width:300px;
+
+max-width:100%;
+
+border-radius:20px;
+
+}
+
+.featured-text{
+
+flex:1;
+
+}
+
+.featured-text h3{
+
+font-size:36px;
+
+margin-bottom:20px;
+
+}
+
+/* ========================= */
+/* UPDATES */
+/* ========================= */
+
+.updates{
+
+padding:80px 10%;
+
+}
+
+.updates h2{
+
+text-align:center;
+
+margin-bottom:30px;
+
+color:#b88cff;
+
+}
+
+.update-card{
+
+background:#111;
+
+padding:25px;
+
+margin-bottom:20px;
+
+border-radius:18px;
+
+transition:.3s;
+
+}
+
+.update-card:hover{
+
+transform:translateY(-5px);
+
+}
+
+/* ========================= */
+/* QUOTE */
+/* ========================= */
+
+.quote{
+
+padding:80px 10%;
+
+text-align:center;
+
+}
+
+.quote p{
+
+font-size:24px;
+
+font-style:italic;
+
+margin:20px auto;
+
+max-width:700px;
+
+}
+
+.quote h3{
+
+color:#b88cff;
+
+}
+
+/* ========================= */
+/* WEBSITE INFO */
+/* ========================= */
+
+.website-info{
+
+padding:80px 10%;
+
+}
+
+.website-info h2{
+
+text-align:center;
+
+margin-bottom:30px;
+
+color:#b88cff;
+
+}
+
+.info-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:20px;
+
+}
+
+.info-card{
+
+background:#111;
+
+padding:25px;
+
+text-align:center;
+
+border-radius:18px;
+
+}
+
+.info-card h3{
+
+color:#b88cff;
+
+margin-bottom:10px;
+
+}
